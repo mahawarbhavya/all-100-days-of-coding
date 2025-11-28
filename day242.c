@@ -1,0 +1,37 @@
+//Q48: Write a program to print the following pattern:
+1
+12
+123
+1234
+12345
+
+/*
+Sample Test Cases:
+Input 1:
+
+Output 1:
+1
+12
+123
+1234
+12345
+
+*/
+#include <stdio.h>
+
+int main() {
+    int i, j;
+
+    // Outer loop for each row (1 to 5)
+    for (i = 1; i <= 5; i++) {
+        
+        // Inner loop prints numbers from 1 to i
+        for (j = 1; j <= i; j++) {
+            printf("%d", j);
+        }
+        
+        printf("\n");  // Move to next line after each row
+    }
+
+    return 0;
+}
